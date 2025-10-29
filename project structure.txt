@@ -1,0 +1,329 @@
+overview/Features: 
+	Users
+		Post --> Images/Videos
+		status timer or auto 24 hours or one time see public and private
+			video 
+			audio 
+			text
+		Message 
+			one time --> delete after see
+			timer base --> after this time delete seen or not.
+			not deleted it save always
+		Live Video Chat with randoms poeples --> same as omegle 
+		live stream 
+		profiles --> for selected users set multiples profile and public profile 
+		mention peoples --> status and posts
+		buy and sell gifts --> to any one
+		Like/dislike posts
+		follow to other
+		comments to posts
+		effect during upload video and edit
+		
+	
+	
+	
+ 👥 User-Side Features
+
+(Your list completed and continued in same format)
+
+1.  Video chat with random online people (like Omegle)
+2.  User uploads video/pic posts
+3.  User adds story (video/pic with 24hr visibility)
+4.  User like/dislike posts
+5.  User adds Wishlist (save favorite posts or products)
+6.  User live streams
+7.  User chat with friends (audio/text/video)
+8.  User sends scheduled chat (like delayed messages or reminders)
+9.  User schedules posts (set publish time)
+10. User adds delays in streams (buffer before live)
+11. User sends gifts (money, coins) to live streamers
+12. User follows others and has followers
+13. User shares files with friends
+14. User comments on posts and live streams
+15. User reports/block others
+16. User bookmarks posts
+17. User creates private/public groups
+18. User customizes profile (bio, avatar, links)
+19. User views activity log/history
+20. User sets privacy settings (profile visibility, who can message, etc.)
+21. User receives notifications (likes, comments, gifts, etc.)
+22. User joins live events or webinars
+23. User uses filters/stickers while posting or live streaming
+24. User reacts to stories (quick emojis or replies)
+25. User earns badges or ranks (for contributions, gifts, etc.)
+26. User withdraws earnings (if they receive gifts)
+27. User watches recommended or trending content
+28. User uses hashtags and tags in posts
+29. User edits or deletes their posts/stories
+30. User blocks comments on posts or streams
+31. User turns on/off live stream chat
+32. User adds story (public/private/custom)
+33. User sets profile picture (DP) as public/private/custom)
+34. User shares stories/DPs with specific friends (custom audience)
+35. User views stories/DPs based on shared access
+36. User pin favorite posts to profile
+37. User saves live streams as replays (VOD-style archive)
+38. User creates and shares post collections/playlists (e.g. “My Fitness Tips”)
+39. User hides specific posts from followers (soft block/hide)
+40. User gets friend suggestions (AI-based or mutuals)
+41. User sees last seen/status of friends (optional toggle)
+42. User sees who viewed their profile (premium or optional)
+43. User gets warned before posting/reporting (content guideline prompts)
+44. User enables 2FA (two-factor auth) for security
+45. User verifies account (blue tick/request verification)
+46. User mentions (@tag) in comments or stories
+47. User uploads short video replies/comments on posts (interactive)
+48. User tags products/services in posts (if e-commerce integrated)
+49. User switches to creator/business account (separate dashboard)
+50. User applies content filters (e.g. blur NSFW, hide spam)
+
+
+ 🛠️ Admin Features
+
+(to manage everything from backend, only one admin initially)
+
+1.  Dashboard overview (users, posts, active streams, revenue)
+2.  Manage users (view, suspend, delete, warn, promote)
+3.  Monitor live streams (view, ban, mute)
+4.  Remove or flag inappropriate content
+5.  View reported users/posts/stories
+6.  Configure video chat filters (age, gender, region)
+7.  Manage coins/gifts system (rates, conversion, limits)
+8.  View and approve withdrawal requests
+9.  Manage categories (for posts, interests, streams)
+10. Control trending algorithm (manually feature content)
+11. Analytics dashboard (active users, growth, popular content)
+12. Email/push notification system (mass messages or alerts)
+13. Manage ads/promotions (if monetized)
+14. Set up and update terms, privacy, community rules
+15. Manage filters, stickers, in-app assets
+16. Schedule platform-wide events or contests
+17. Maintain content backup and logs (for legal/security)
+18. Approve/reject scheduled posts (optional moderation)
+19. Update roles — ability to add other admins/moderators in future
+20. Monitor server usage (bandwidth, storage, API calls)
+21. Configure delay settings for streaming (buffer time)
+22. Handle payment gateways (PayPal, Stripe, etc.)
+23. Monitor and ban VPN/proxy users (optional)
+24. SEO and app store content management (titles, meta info)
+25. View chat logs (if flagged or for moderation)
+26. Admin impersonates/view as user (debug or report verification)
+27. Admin manages user verification requests (approve/reject blue tick)
+28. Admin sees engagement metrics (avg likes/post, comments/user)
+29. Admin blacklists IPs/devices for banned users
+30. Admin auto-flag system with AI or keyword detection (posts/comments)
+31. Admin manages creator payouts report (monthly earning reports)
+32. Admin customizes onboarding experience (default interests, starter content)
+33. Admin sets up push triggers (e.g. inactive user re-engagement)
+34. Admin controls creator vs. normal user permissions
+35. Admin downloads audit logs (legal/security requirements)
+36. Admin configures terms for verified badge
+37. Admin creates default hashtags/trending topics
+38. Admin moderates marketplace (if product tagging or monetization is used)
+
+
+📌 PART 1: USER & ADMIN FLOW DIAGRAM (text format for now)
+
+ 👤 User Flow (Web & Mobile)
+
+Start → Register/Login
+      ↓
+    Home Feed ← Trending / Followed Posts
+      ↓
+   [Explore Features]
+      ├── Post Upload (Image/Video)
+      ├── Add Story
+      ├── Live Stream
+      ├── Video Chat (Random)
+      ├── Scheduled Post/Chat
+      ↓
+  Interact (Like, Comment, Follow, Share, Wishlist, Gift)
+      ↓
+   Messages (1-1 Chat, Group, Audio/Video, Scheduled)
+      ↓
+   Notifications & Settings
+      ↓
+   Withdraw Earnings / Gifts (if eligible)
+      ↓
+    End / Logout
+
+
+ 🛠️ Admin Flow
+
+
+Start → Admin Login
+      ↓
+    Admin Dashboard
+      ├── Manage Users (ban, warn, promote)
+      ├── Manage Posts & Stories
+      ├── Monitor Live Streams / Video Chats
+      ├── View Reports (users, posts, comments)
+      ├── Payment & Gift System
+      ├── Analytics (trends, revenue, usage)
+      ├── Configure Platform Settings
+      └── Handle Withdrawals, Ads, and Events
+      ↓
+    Logs, Backups, & Security
+      ↓
+    End / Logout
+
+
+ 🗃️ PART 2: DATABASE SCHEMA (MongoDB-based)
+
+
+ 💸 PART 3: MONETIZATION OPTIONS
+
+ 1. Gifts System (Coins/Money)
+
+* Users buy coins with real money (via Stripe/PayPal).
+* Send coins to streamers or content creators.
+* Admin takes platform commission (e.g. 20%).
+
+ 2. Premium Features
+
+* Premium users unlock:
+
+  * Unlimited video chats
+  * Better stream visibility
+  * Exclusive filters/stickers
+  * Scheduled posts/chat access
+  * Profile boost (top ranking)
+
+ 3. ds Integration
+
+* Show banner/interstitial ads (AdSense or other).
+* Promote user posts (paid promotion system).
+* Sponsored stories or live events.
+
+4. Subscription Models
+
+* Monthly subscription for creators
+* Super-followers (unlock exclusive content)
+
+
+✅ Recommended Stack Summary (for your setup)
+
+| Layer             | Stack                              |
+| ----------------- | ---------------------------------- |
+| Frontend (Web)    | React.js + Redux/Zustand           |
+| Backend API       | Node.js + Express.js               |
+| Database          | MongoDB (Mongoose)                 |
+| Auth              | JWT + bcrypt                       |
+| Storage           | AWS S3 / Cloudinary                |
+| Live Stream       | WebRTC 				 |
+| Random Video Chat | WebRTC + Signaling Server          |
+| Notifications     | Firebase / OneSignal               |
+| Real-Time Chat    | Socket.IO / WebRTC                 |
+| Payments          | Stripe / Razorpay                  |
+| Mobile            | React Native                       |
+| Hosting (initial) | Hostinger VPS (Node + NGINX + PM2) |
+
+_________________________________________________________________________________
+Perfect — here’s the full **Feature Priority Matrix (MVP → Advanced)** with tagging for:
+
+* ✅ **MVP (Must-have features)** — launch-ready core features
+* 🔁 **Phase 2 (Important, next-level)** — after MVP traction
+* 🌟 **Advanced (Optional, power features)** — for scale, retention, or monetization
+
+---
+
+# 👥 USER-SIDE FEATURES – PRIORITY MATRIX
+
+| #  | Feature                                                                | Priority     |
+| -- | ---------------------------------------------------------------------- | -----------  |
+| 1  | Video chat with random online people (like Omegle)                     | ✅ MVP       |
+| 2  | User uploads video/pic posts                                           | ✅ MVP       |
+| 3  | User adds story (video/pic with 24hr visibility)                       | ✅ MVP       |
+| 4  | User like/dislike posts                                                | ✅ MVP       |
+| 5  | User adds Wishlist (save favorite posts/products)                      | ✅ MVP       |
+| 6  | User live streams                                                      | ✅ MVP       |
+| 7  | User chat with friends (audio/text/video)                              | ✅ MVP       |
+| 8  | User sends scheduled chat                                              | 🔁 Phase 2   |
+| 9  | User schedules posts (set publish time)                                | 🔁 Phase 2   |
+| 10 | User adds delays in streams                                            | 🔁 Phase 2   |
+| 11 | User sends gifts (money, coins) to live streamers                      | ✅ MVP       |
+| 12 | User follows others and has followers                                  | ✅ MVP       |
+| 13 | User shares files with friends                                         | 🔁 Phase 2   |
+| 14 | User comments on posts and live streams                                | ✅ MVP       |
+| 15 | User reports/block others                                              | ✅ MVP       |
+| 16 | User bookmarks posts                                                   | ✅ MVP       |
+| 17 | User creates private/public groups                                     | 🔁 Phase 2   |
+| 18 | User customizes profile (bio, avatar, links)                           | ✅ MVP       |
+| 19 | User views activity log/history                                        | 🔁 Phase 2   |
+| 20 | User sets privacy settings (profile visibility, who can message, etc.) | ✅ MVP       |
+| 21 | User receives notifications                                            | ✅ MVP       |
+| 22 | User joins live events or webinars                                     | 🔁 Phase 2   |
+| 23 | User uses filters/stickers while posting or live streaming             | 🌟 Advanced  |
+| 24 | User reacts to stories (quick emojis or replies)                       | 🔁 Phase 2   |
+| 25 | User earns badges or ranks                                             | 🌟 Advanced  |
+| 26 | User withdraws earnings                                                | ✅ MVP       |
+| 27 | User watches recommended/trending content                              | ✅ MVP       |
+| 28 | User uses hashtags and tags in posts                                   | ✅ MVP       |
+| 29 | User edits or deletes their posts/stories                              | ✅ MVP       |
+| 30 | User blocks comments on posts or streams                               | 🔁 Phase 2   |
+| 31 | User turns on/off live stream chat                                     | 🔁 Phase 2   |
+| 32 | User adds story (public/private/custom)                                | ✅ MVP       |
+| 33 | User sets DP as public/private/custom                                  | ✅ MVP       |
+| 34 | User shares stories/DPs with specific friends                          | 🔁 Phase 2   |
+| 35 | User views stories/DPs based on shared access                          | ✅ MVP       |
+| 36 | User pins favorite posts to profile                                    | 🌟 Advanced  |
+| 37 | User saves live streams as replays                                     | 🔁 Phase 2   |
+| 38 | User creates post collections/playlists                                | 🌟 Advanced  |
+| 39 | User hides specific posts from followers                               | 🔁 Phase 2   |
+| 40 | User gets friend suggestions                                           | 🌟 Advanced  |
+| 41 | User sees last seen/status of friends                                  | 🔁 Phase 2   |
+| 42 | User sees who viewed their profile                                     | 🌟 Advanced  |
+| 43 | User gets content warning prompts before posting                       | 🔁 Phase 2   |
+| 44 | User enables 2FA                                                       | ✅ MVP       |
+| 45 | User requests verification (blue tick)                                 | 🔁 Phase 2   |
+| 46 | User @mentions in posts/comments/stories                               | ✅ MVP       |
+| 47 | User posts short video replies/comments                                | 🌟 Advanced  |
+| 48 | User tags products/services in posts                                   | 🌟 Advanced  |
+| 49 | User switches to creator/business account                              | 🔁 Phase 2   |
+| 50 | User applies content filters (blur NSFW, hide spam)                    | 🔁 Phase 2   |
+
+---
+
+# 🛠️ ADMIN FEATURES – PRIORITY MATRIX
+
+| #  | Feature                                         | Priority     |
+| -- | ----------------------------------------------- | -----------  |
+| 1  | Dashboard overview                              | ✅ MVP       |
+| 2  | Manage users (suspend, delete, warn, etc.)      | ✅ MVP       |
+| 3  | Monitor live streams                            | ✅ MVP       |
+| 4  | Remove or flag inappropriate content            | ✅ MVP       |
+| 5  | View reported users/posts/stories               | ✅ MVP       |
+| 6  | Configure video chat filters                    | 🔁 Phase 2   |
+| 7  | Manage coins/gifts system                       | ✅ MVP       |
+| 8  | View and approve withdrawal requests            | ✅ MVP       |
+| 9  | Manage categories for posts/interests           | 🔁 Phase 2   |
+| 10 | Control trending algorithm                      | 🔁 Phase 2   |
+| 11 | Analytics dashboard                             | 🔁 Phase 2   |
+| 12 | Email/push notification system                  | ✅ MVP       |
+| 13 | Manage ads/promotions                           | 🔁 Phase 2   |
+| 14 | Update terms, privacy, rules                    | ✅ MVP       |
+| 15 | Manage filters/stickers/assets                  | 🌟 Advanced  |
+| 16 | Schedule platform-wide events                   | 🌟 Advanced  |
+| 17 | Maintain backups and logs                       | ✅ MVP       |
+| 18 | Approve/reject scheduled posts                  | 🔁 Phase 2   |
+| 19 | Update roles (add moderators later)             | 🔁 Phase 2   |
+| 20 | Monitor server usage                            | 🔁 Phase 2   |
+| 21 | Configure delay for live streams                | 🔁 Phase 2   |
+| 22 | Handle payment gateways (PayPal, Stripe)        | ✅ MVP       |
+| 23 | Monitor/ban VPN/proxy users                     | 🌟 Advanced  |
+| 24 | SEO/app store content management                | 🌟 Advanced  |
+| 25 | View chat logs for flagged users                | 🔁 Phase 2   |
+| 26 | Impersonate/view as user                        | 🔁 Phase 2   |
+| 27 | Handle verification badge requests              | 🔁 Phase 2   |
+| 28 | Engagement metrics (avg likes/user, time spent) | 🌟 Advanced  |
+| 29 | Blacklist IPs/devices                           | 🔁 Phase 2   |
+| 30 | Auto-flag system (AI moderation)                | 🌟 Advanced  |
+| 31 | Creator payout reports                          | 🔁 Phase 2   |
+| 32 | Customize onboarding experience                 | 🔁 Phase 2   |
+| 33 | Set up push triggers for re-engagement          | 🌟 Advanced  |
+| 34 | Control creator vs. user permissions            | 🔁 Phase 2   |
+| 35 | Export audit logs                               | ✅ MVP       |
+| 36 | Configure terms for blue tick                   | 🔁 Phase 2   |
+| 37 | Create default hashtags or topics               | 🌟 Advanced  |
+| 38 | Moderate marketplace (if e-commerce involved)   | 🔁 Phase 2   |
+
