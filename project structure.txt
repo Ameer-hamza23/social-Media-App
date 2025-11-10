@@ -527,3 +527,28 @@ const user  = {
    email --> unique
    
 }
+
+user auth : 
+   Signup
+   Login
+   forgot password
+   change password 
+   Login with google
+   Email Verification
+   Two Factor Auth --> Optional 
+   Logout
+   Account Deletion
+
+User Chat
+   Video Chat with Random
+   
+
+Profile 
+   Add multiple profile image
+
+post 
+   post video/image
+
+Story
+   Add stories
+
